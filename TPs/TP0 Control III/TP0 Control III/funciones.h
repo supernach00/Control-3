@@ -9,19 +9,24 @@
 #ifndef FUNCIONES_H_
 #define FUNCIONES_H_
 
-// Funciones de configuración
-
+// Includes
 #include <stdint.h>
-#define C  5;
-#define A 16000 / (5*1024)
-void setup_ADC(void);
-void setup_PWM(void);
+
+// Constantes
 
 #define referencia 3000 // (En milivoltios)
-#define T 1
-#define tau 500
+#define T 1.0
+#define tau 10.0
 #define alfa  tau / (T + tau)
 #define beta  T / (T + tau)
+#define A 16000.0 / (5.0*1024.0)sd
+#define C  5;
+#define A 16000 / (5*1024)
+
+// Funciones de configuración
+
+void setup_ADC(void);
+void setup_PWM(void);
 
 // Funciones generales
 

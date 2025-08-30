@@ -13,7 +13,6 @@
 #include <stdio.h>
 
 volatile uint16_t tension_entrada;
-volatile uint16_t tension_salida_actual;
 uint8_t flag_lectura_ADC = 0;
 uint16_t tension_filtrada = 0;
 
@@ -43,7 +42,7 @@ int main(void)
 			
 			tension_entrada = leer_ADC();
 			tension_filtrada = filtro_RC(referencia - tension_entrada);
-			//OCR1A = tension_a_WC(tension_filtrada);
+			OCR1A = tension_a_WC(tension_filtrada);
 			
 		} 
     }

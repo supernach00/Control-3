@@ -59,12 +59,12 @@ uint16_t filtro_RC(uint16_t tension_entrada){
 	
 	// Filtrado
 	
-	uint16_t tension_salida_anterior = tension_salida_actual;
-	tension_salida_actual = (uint16_t)(alfa * tension_salida_anterior + beta * tension_entrada);
+	static float tension_salida = 0.0;
+	tension_salida = (alfa * tension_salida + beta * tension_entrada);
 	
 	// Conversion a ciclo de trabajo:
 	
-	return tension_salida_actual;
+	return (uint16_t) tension_salida;
 	
 }
 
