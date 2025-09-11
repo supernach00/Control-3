@@ -1,10 +1,7 @@
 %% Ejercicio 2
 
 s = tf('s');
-G = ((1-s)*(s*s+0.2*s+1))/((s+1)*(s+3)*(s+5));
-K = ((s+1)*(s+5))/(s*(s*s+0.2*s+1)); 
-rlocus(G*K)
-
+G = ((1-s)*(s*s+0.2*s+1))/(()*)
 
 %% Ejercicio 4 c
 
@@ -16,6 +13,7 @@ g = 1/(s+1)
 
 g0 = 1/(s+1)
 g0 = g0.IOdelay = 12.5
+
 
 % Parametros para graficar 
 n = 1e3
