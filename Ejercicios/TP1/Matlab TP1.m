@@ -5,7 +5,7 @@ G = ((1-s)*(s*s+0.2*s+1))/((s+1)*(s+3)*(s+5));
 K = ((s+1)*(s+5))/(s*(s*s+0.2*s+1)); 
 rlocus(G*K)
 
-
+sdsdasd
 %% Ejercicio 4 c
 
 % Familia de plantas
