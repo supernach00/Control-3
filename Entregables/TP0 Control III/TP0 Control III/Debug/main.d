@@ -11,13 +11,13 @@ main.d main.o: .././main.c .././funciones.h \
  d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
  d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
- d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
+ d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
+ d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
+ d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
  d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
- d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
- d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
- d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h
+ d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h
 
 .././funciones.h:
 
@@ -45,7 +45,11 @@ d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.
 
 d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h:
 
-d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
+d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h:
+
+d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h:
+
+d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h:
 
 d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
 
@@ -53,8 +57,4 @@ d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\dela
 
 d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
 
-d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h:
-
-d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h:
-
-d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h:
+d:\microchip\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:

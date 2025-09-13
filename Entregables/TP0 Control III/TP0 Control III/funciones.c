@@ -3,7 +3,7 @@
 #include <avr/interrupt.h>
 
 extern volatile uint16_t tension_entrada;
-extern volatile uint16_t tension_salida_actual;
+extern volatile uint16_t tension_filtrada;
 
 void setup_ADC(void){
 	
@@ -11,7 +11,7 @@ void setup_ADC(void){
 	PRESCALER = 128 (f_adc = 125Khz)
 	ADC = ENABLE
 	ADC INTERRUPT = ENABLE
-	PIN DE ENTRADA = ADC0
+	PIN DE ENTRADA = ADC1
 	REFERENCIA = 5V
 	*/
 	
@@ -55,14 +55,11 @@ uint16_t leer_ADC(){
 	
 	}
 		
-uint16_t filtro_RC(uint16_t tension_entrada){
+uint16_t filtro_RC(uint16_t error){
 	
 	// Filtrado
 	
-	static float tension_salida = 0.0;
-	tension_salida = (alfa * tension_salida + beta * tension_entrada);
-	
-	// Conversion a ciclo de trabajo:
+	float tension_salida = (alfa * tension_filtrada + beta * error);
 	
 	return (uint16_t) tension_salida;
 	

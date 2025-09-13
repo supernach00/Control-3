@@ -1,4 +1,5 @@
 #include <avr/io.h>
+
 #include "uart.h"
 
 void USART_init(void) {
@@ -30,3 +31,13 @@ void USART_putstring(char* StringPtr) {
 		USART_send(*StringPtr++);
 	}
 }
+
+void USART_put_uint16(uint16_t variable) {
+	char string_out[10];
+	sprintf(string_out, "%d", variable);
+	USART_putstring(string_out);
+	USART_putstring("\r\n");
+	_delay_ms(500);
+	
+}
+

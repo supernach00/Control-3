@@ -13,14 +13,10 @@
 #include <stdio.h>
 
 volatile uint16_t tension_entrada;
+volatile uint16_t tension_filtrada = 0;
 uint8_t flag_lectura_ADC = 0;
-uint16_t tension_filtrada = 0;
 
 #define referencia 3000 // (En milivoltios)
-#define T 1
-#define tau 500
-#define alfa  tau / (T + tau)
-#define beta  T / (T + tau)
 
 ISR(TIMER1_OVF_vect) {
 	
@@ -42,6 +38,7 @@ int main(void)
 			
 			tension_entrada = leer_ADC();
 			tension_filtrada = filtro_RC(referencia - tension_entrada);
+			USART_put_uint16(tension_filtrada);
 			OCR1A = tension_a_WC(tension_filtrada);
 			
 		} 

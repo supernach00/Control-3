@@ -14,14 +14,12 @@
 
 // Constantes
 
-#define referencia 3000 // (En milivoltios)
 #define T 1.0
-#define tau 10.0
+#define tau 500.0
 #define alfa  tau / (T + tau)
 #define beta  T / (T + tau)
-#define A 16000.0 / (5.0*1024.0)sd
+#define A 16000.0 / (5.0*1024.0)
 #define C  5;
-#define A 16000 / (5*1024)
 
 // Funciones de configuración
 
@@ -31,7 +29,8 @@ void setup_PWM(void);
 // Funciones generales
 
 uint16_t leer_ADC(void);
-uint16_t filtro_RC(uint16_t tension_entrada);
+uint16_t filtro_RC(uint16_t error);
 uint16_t tension_a_WC(uint16_t tension);
+
 
 #endif /* FUNCIONES_H_ */
