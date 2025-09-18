@@ -19,12 +19,12 @@ G = 1/(1 + s*R*C)^5;
 tau_c = 1000e-3; % tau_c = 1000 ms
 Con = 1/(1 + s*tau_c);
 T1 = G*Con/(1 + G*Con);
-% rlocus(G*C);
+% rlocus(G*Con);
 
 tau_c = 500e-3; % tau_c = 500 ms
 Con = 1/(1 + s*tau_c);
 T2 = G*Con/(1 + G*Con);
-% rlocus(G*C);
+% rlocus(G*Con);
 
 % Gráficos
 figure;
